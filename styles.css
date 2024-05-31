@@ -31,8 +31,8 @@ svg {
 
 .circle {
     fill: none;
-    stroke: #00aaff;
-    stroke-width: 2.8;
+    stroke: #005cff;
+    stroke-width: 3.8;
     transition: stroke-dasharray 0.5s;
 }
 
@@ -191,7 +191,7 @@ input[type="checkbox"] {
 }
 
 input:checked + .slider {
-    background-color: #00aaff;
+    background-color: #005cff;
 }
 
 input:checked + .slider:before {

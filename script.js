@@ -27,3 +27,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.getElementById('value-input').addEventListener('change', function() {
+    var input = this;
+    var value = parseInt(input.value, 10);
+
+    if (value < 0) {
+        input.value = 0;
+    } else if (value > 100) {
+        input.value = 100;
+    }
+});
