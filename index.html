@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Block</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="progress-block" class="progress normal">
+            <svg viewBox="0 0 36 36">
+                <path class="circle-bg" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                <path id="circle" class="circle" stroke-dasharray="0, 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+        </div>
+        <div class="controls">
+            <div class="value-container">
+                <label class="value">
+                    <input type="number" id="value-input" min="0" max="100" value="0">
+                </label>
+                Value                 
+            </div>
+            <label class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="animate-toggle">
+                    <span class="slider"></span>
+                </label>
+                Animate
+            </label>
+            <label class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="hide-toggle">
+                    <span class="slider"></span>
+                </label>
+                Hide
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
